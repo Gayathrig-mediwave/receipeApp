@@ -1,5 +1,5 @@
 const addrecipebtn = document.querySelector("#addrecipebtn");
 addrecipebtn.addEventListener("click", function () {
-  location.href = "displayrecipe.js";
+  window.open("./displayrecipe.html");
   console.log("displaypage");
 });
