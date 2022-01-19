@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f2f2f2;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.container {
+  margin: 0 auto;
+  max-width: 960px;
+}
+.py-50 {
+  padding: 50px 0px;
+}
+.nav-wrap {
+  background-color: #fff;
+  border-bottom: 1px solid #00b158;
+}
+.nav-group {
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 20px 0px 20px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+.nav-items {
+  display: flex;
+  align-items: center;
+}
+.nav-items p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 94px;
+  height: 33px;
+  text-align: center;
+  border-radius: 33px;
+}
+.nav-items p:nth-child(1) {
+  background-color: #00b158;
+  color: #fff;
+}
+.heroAddRecipes-image {
+  background-image: url(./images//claudio-schwarz-4qJlXK4mYzU-unsplash.png);
+  height: 381px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.hero-trans {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+}
+.hero-text {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+  font-size: 45px;
+  color: white;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -80%);
+}
+
+.header input {
+  max-width: 580px;
+  height: 50px;
+  border-radius: 25px;
+  background-image: url(./images/claudio-schwarz-4qJlXK4mYzU-unsplash.png);
+  background-repeat: no-repeat;
+  border: none;
+}
+.displayrecipecontainer {
+  max-width: 70%;
+  margin: 55px auto;
+}
