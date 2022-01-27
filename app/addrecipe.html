@@ -1,113 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Add Recipe</title>
-    <link rel="stylesheet" href="addrecipestyle.css" class="css" />
-  </head>
-  <body>
-    <div class="nav-wrap">
-      <div class="nav-group">
-        <div class="logo-blk">
-          <img src="./images/Yummy.png" alt="Yummy logo" />
-               </div>
 
-        <div class="nav-items">
-          <p>Home</p>
-          <p>Recipe</p>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Add Recipe</title>
+  <link rel="stylesheet" href="addrecipestyle.css" class="css" />
+</head>
+
+<body>
+  <!-- Navigation block -->
+  <div class="nav-wrap">
+    <div class="nav-group">
+      <div class="logo-blk">
+        <img src="./images/Yummy.png" alt="Yummy logo" />
+      </div>
+
+      <div class="nav-items">
+        <p>Home</p>
+        <p>Recipe</p>
       </div>
     </div>
-    <div class="main" id="section1"></div>
-       <div class="addRecipe-img" >
-          <div class="text-div">
-            <h1 class="img-text">New recipe</h1>
-          </div>
-        </div>
+  </div>
+  <!-- cover image -->
+  <div class="main" id="section1"></div>
+  <div class="addRecipe-img">
+    <div class="text-div">
+      <h1 class="img-text">New recipe</h1>
     </div>
+  </div>
+  </div>
+  <!-- back to home -->
+  <div class="addRecipe-container">
+    <a href="./index.html">
+      < Back to home </a>
+        <!-- Form to add recipe -->
+        <form id="form-container" class="RecipieFrom">
+          <h2>Add your new recipes</h2>
 
-    <div class="addRecipe-container">
-        <a href="./index.html">
-          < Back to home
-        </a>
-      
-      <form id="form-container" class="RecipieFrom">
-        <h2>Add your new recipes</h2>
-       
           <div class="recipe-namediv">
-            <label>Name of your recipe</label>        
+            <label>Name of your recipe</label>
             <input type="text" id="recipe-name" />
-          </div>       
+          </div>
           <div class="recipe-imagediv">
-            <label>Recipe image</label>    
-            <input type="text"  id="recipe-image" />
+            <label>Recipe image</label>
+            <input type="text" id="recipe-image" />
           </div>
-          
+
           <div class="mt-sm">
-            <input type="submit" id="uploadbutton"value="UPLOAD" />
+            <input type="submit" id="uploadbutton" value="UPLOAD" />
           </div>
-       
-        
-        <div class="food-type">
-          <p>Food type </p>
-          <input type="radio" id="vegetarian" name="vegetarian" value="Vegetarian">
-         <label for="vegetarian">Vegetarian</label><br>
-          <input type="radio" id="nonvegetarian" name="nonvegetarian" value="Non-Vegetarian">
-        <label for="nonvegetarian">Non-Vegetarian</label><br>
 
-        </div>
-        <div>
-          <p>
-            Ingredients required
-          </p>
-        </div>
-        <div class="ingredients-div">
-          <textarea class="ingredients" name="ingredients" rows="4" cols="50"></textarea>
-          <!-- <input type="text" "> -->
-        </div>
-        <div>
-          <p>
-            Steps to prepare
-          </p>
-        </div>
-        <div class="preparation">
-          <textarea class="preparation-steps" name="preparation-steps" rows="4" cols="50"></textarea>
-          <!-- <input type="text" class="preparation-steps"> -->
-        </div>
-        <div class="addrecipebtnclass">
-          <input type="submit" class="addrecipebtn" id="addrecipebtn" name="addrecipebtn"value="ADD RECIPE"/>
-        </div>   
 
-      </form>
-    </div>
-   
+          <div class="food-type">
+            <p>Food type </p>
+            <input type="radio" id="vegetarian" name="vegetarian" value="Vegetarian">
+            <label for="vegetarian">Vegetarian</label><br>
+            <input type="radio" id="nonvegetarian" name="nonvegetarian" value="Non-Vegetarian">
+            <label for="nonvegetarian">Non-Vegetarian</label><br>
 
-    <div class="footer-div">
+          </div>
+          <div>
+            <p>
+              Ingredients required
+            </p>
+          </div>
+          <div class="ingredients-div">
+            <textarea class="ingredients" name="ingredients" rows="4" cols="50"></textarea>
 
-      <div class="yummy-footer">
-        <div>
-          <p id="yummy">Yummy</p>
-        </div>
-        <div class="footer-menu">
-          <a href="./index.html">Home</a>
-          <a href="./addrecipe.html">Recipe</a>
-        </div>
-        <div>
-          <img id="twitter" src="./images/Group 14.png" alt="twitterlogo" />
-          <img id="facebook" src="./images/Group 12.png" alt="facebooklogo" />
-          <img id="insta" src="./images/Group 16.png" alt="instalogo" />
-        </div>
+          </div>
+          <div>
+            <p>
+              Steps to prepare
+            </p>
+          </div>
+          <div class="preparation">
+            <textarea class="preparation-steps" name="preparation-steps" rows="4" cols="50"></textarea>
+
+          </div>
+          <div class="addrecipebtnclass">
+            <input type="submit" class="addrecipebtn" id="addrecipebtn" name="addrecipebtn" value="ADD RECIPE" />
+          </div>
+
+        </form>
+  </div>
+
+  <!-- footer div -->
+  <div class="footer-div">
+
+    <div class="yummy-footer">
+      <div>
+        <p id="yummy">Yummy</p>
       </div>
-
-      <div class="footer-year">
-        <p id="by">©2022 by yummy.</p>
+      <div class="footer-menu">
+        <a href="./index.html">Home</a>
+        <a href="./addrecipe.html">Recipe</a>
       </div>
-
+      <div>
+        <img id="twitter" src="./images/Group 14.png" alt="twitterlogo" />
+        <img id="facebook" src="./images/Group 12.png" alt="facebooklogo" />
+        <img id="insta" src="./images/Group 16.png" alt="instalogo" />
+      </div>
     </div>
-    <script src="/addrecipescript.js"></script>
-  </body>
+
+    <div class="footer-year">
+      <p id="by">©2022 by yummy.</p>
+    </div>
+
+  </div>
+  <script src="/addrecipescript.js"></script>
+</body>
+
 </html>
-
-

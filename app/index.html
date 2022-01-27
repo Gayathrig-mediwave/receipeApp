@@ -1,232 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>RECIPE APP</title>
-    <link rel="stylesheet" href="/style.css" class="css" />
-  </head>
-  <body>
-    <div class="nav-wrap">
-      <div class="nav-group">
-        <div class="logo-blk">
-          <img src="/images/Yummy.png" alt="Yummy logo" />
-        </div>
 
-        <div class="nav-items">
-          <p>Home</p>
-          <p>Recipe</p>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RECIPE APP</title>
+  <link rel="stylesheet" href="/style.css" class="css" />
+</head>
+
+<body>
+  <!-- Navigation block -->
+  <div class="nav-wrap">
+    <div class="nav-group">
+      <div class="logo-blk">
+        <img src="/images/Yummy.png" alt="Yummy logo" />
+      </div>
+
+      <div class="nav-items">
+        <a href="./index.html">Home</a>
+        <a href="./addrecipe.html">Recipe </a>
+        <p><img src="./images/Group 22.png" alt="" srcset=""></p>
       </div>
     </div>
-    <section class="header">
-      <div class="header-content">
-        <h1>Delicious recipes just click away</h1>
-        <form action="search" size="40">
-          <input type="text" id="search-bar" placeholder="Search" />
-        </form>
+  </div>
+  <!-- cover image -->
+  <section class="header">
+    <div class="header-content">
+      <h1>Delicious recipes just click away</h1>
+      <form id="formId" size="40">
+        <!-- <input type="text" id="search-bar" placeholder="Search" /> -->
+        <input type="text" placeholder="Search" />
+        <div class="search">
+          <img src="./images//noun-search-3039092.png" alt="search-image">
+        </div>
+      </form>
+    </div>
+  </section>
+  <!-- Popular recipes -->
+  <section class="recipes-blk">
+    <div class="container py-50">
+      <div class="text-center">
+        <h2>Our recipes</h2>
+        <p class="section-desc">POPULAR RECIPES</p>
       </div>
-    </section>
-
-    <section class="recipes-blk">
-      <div class="container py-50">
-        <div class="text-center">
-          <h2>Our recipes</h2>
-          <p class="section-desc">POPULAR RECIPES</p>
-        </div>
-        <div class="text-right">
-          <button class="primary-btn" id="addrecipe">Add recipes</button>
-        </div>
-        <!-- Card Block start -->
-        <div class="imagecards">
-          <!-- Grill Chicken -->
-          <div class="recipe-card-wrap">
-            <div class="recipe-card">
-              <div class="cover-img">
-                <img
-                  src="./images/claudio-schwarz-4qJlXK4mYzU-unsplash.png"
-                  alt=""
-                />
-              </div>
-              <div class="content">
-                <div class="name-content">
-                  <p>Grill Chicken</p>
-                  <img
-                    src="./images/Group 3.png"
-                    alt=""
-                    width="20px"
-                    height="20px"
-                  />
-                </div>
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry.
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- Card Block End -->
-
-          <!-- Chicken pasta -->
-          <div class="recipe-card-wrap">
-            <div class="recipe-card">
-              <div class="cover-img">
-                <img
-                  src="./images/farhad-ibrahimzade-KpOl9jV2aJM-unsplash.png"
-                  alt=""
-                />
-              </div>
-              <div class="content">
-                <div class="name-content">
-                  <p>Chicken pasta</p>
-                  <img
-                    src="./images/Group 3.png"
-                    alt=""
-                    width="20px"
-                    height="20px"
-                  />
-                </div>
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry.
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- Card Block End -->
-          <!-- Veg pasta -->
-          <div class="recipe-card-wrap">
-            <div class="recipe-card">
-              <div class="cover-img">
-                <img
-                  src="./images/amirali-mirhashemian-v2z6Yhp_6Gc-unsplash.png"
-                  alt=""
-                />
-              </div>
-              <div class="content">
-                <div class="name-content">
-                  <p>Veg pasta</p>
-                  <img
-                    src="./images/Group 3.png"
-                    alt=""
-                    width="20px"
-                    height="20px"
-                  />
-                </div>
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry.
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- Card Block End -->
-          <!-- Tomato Pizza -->
-          <div class="recipe-card-wrap">
-            <div class="recipe-card">
-              <div class="cover-img">
-                <img
-                  src="./images/thomas-tucker-MNtag_eXMKw-unsplash.png"
-                  alt=""
-                />
-              </div>
-              <div class="content">
-                <div class="name-content">
-                  <p>Tomato Pizza</p>
-                  <img
-                    src="./images/Group 3.png"
-                    alt=""
-                    width="20px"
-                    height="20px"
-                  />
-                </div>
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry.
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- Card Block End -->
-          <!--Chicken wings-->
-          <div class="recipe-card-wrap">
-            <div class="recipe-card">
-              <div class="cover-img">
-                <img
-                  src="./images/claudio-schwarz-4qJlXK4mYzU-unsplash.png"
-                  alt=""
-                />
-              </div>
-              <div class="content">
-                <div class="name-content">
-                  <p>Chicken wings</p>
-                  <img
-                    src="./images/Group 3.png"
-                    alt=""
-                    width="20px"
-                    height="20px"
-                  />
-                </div>
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry.
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- Card Block End -->
-          <!-- Chicken chops -->
-          <div class="recipe-card-wrap">
-            <div class="recipe-card">
-              <div class="cover-img">
-                <img
-                  src="./images/markus-winkler-WHtVB-RiW2I-unsplash.png"
-                  alt=""
-                />
-              </div>
-              <div class="content">
-                <div class="name-content">
-                  <p>Chicken chops</p>
-                  <img
-                    src="./images/Group 3.png"
-                    alt=""
-                    width="20px"
-                    height="20px"
-                  />
-                </div>
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry.
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- Card Block End -->
-        </div>
+      <div class="text-right">
+        <button class="primary-btn" id="addrecipe">Add recipes</button>
       </div>
-    </section>
-    <div class="footer-div">
-      <div class="yummy-footer">
-        <div>
-          <p id="yummy">Yummy</p>
+      <!-- Main Card Block start -->
+      <div class="imagecards">
+        <!-- Grill Chicken -->
+        <div class="recipe-card-wrap">
+          <div class="recipe-card">
+            <div class="cover-img">
+              <img src="./images/claudio-schwarz-4qJlXK4mYzU-unsplash.png" alt="" />
+            </div>
+            <div class="content">
+              <div class="name-content">
+                <p>Grill Chicken</p>
+                <img src="./images/Group 3.png" alt="" width="20px" height="20px" />
+              </div>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and
+                typesetting industry.
+              </p>
+            </div>
+          </div>
         </div>
-        <div class="footer-menu">
-          <a href="./index.html">Home</a>
-          <a href="./addrecipe.html">Recipe</a>
-        </div>
-        <div>
-          <img id="twitter" src="./images/Group 14.png" alt="twitterlogo" />
-          <img id="facebook" src="./images/Group 12.png" alt="facebooklogo" />
-          <img id="insta" src="./images/Group 16.png" alt="instalogo" />
-        </div>
-      </div>
+        <!-- Card Block End -->
 
-      <div class="footer-year">
-        <p id="by">©2022 by yummy.</p>
+        <!-- Chicken pasta -->
+        <div class="recipe-card-wrap">
+          <div class="recipe-card">
+            <div class="cover-img">
+              <img src="./images/farhad-ibrahimzade-KpOl9jV2aJM-unsplash.png" alt="" />
+            </div>
+            <div class="content">
+              <div class="name-content">
+                <p>Chicken pasta</p>
+                <img src="./images/Group 3.png" alt="" width="20px" height="20px" />
+              </div>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and
+                typesetting industry.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Card Block End -->
+        <!-- Veg pasta -->
+        <div class="recipe-card-wrap">
+          <div class="recipe-card">
+            <div class="cover-img">
+              <img src="./images/amirali-mirhashemian-v2z6Yhp_6Gc-unsplash.png" alt="" />
+            </div>
+            <div class="content">
+              <div class="name-content">
+                <p>Veg pasta</p>
+                <img src="./images/Group 3.png" alt="" width="20px" height="20px" />
+              </div>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and
+                typesetting industry.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Card Block End -->
+        <!-- Tomato Pizza -->
+        <div class="recipe-card-wrap">
+          <div class="recipe-card">
+            <div class="cover-img">
+              <img src="./images/thomas-tucker-MNtag_eXMKw-unsplash.png" alt="" />
+            </div>
+            <div class="content">
+              <div class="name-content">
+                <p>Tomato Pizza</p>
+                <img src="./images/Group 3.png" alt="" width="20px" height="20px" />
+              </div>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and
+                typesetting industry.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Card Block End -->
+        <!--Chicken wings-->
+        <div class="recipe-card-wrap">
+          <div class="recipe-card">
+            <div class="cover-img">
+              <img src="./images/claudio-schwarz-4qJlXK4mYzU-unsplash.png" alt="" />
+            </div>
+            <div class="content">
+              <div class="name-content">
+                <p>Chicken wings</p>
+                <img src="./images/Group 3.png" alt="" width="20px" height="20px" />
+              </div>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and
+                typesetting industry.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Card Block End -->
+        <!-- Chicken chops -->
+        <div class="recipe-card-wrap">
+          <div class="recipe-card">
+            <div class="cover-img">
+              <img src="./images/markus-winkler-WHtVB-RiW2I-unsplash.png" alt="" />
+            </div>
+            <div class="content">
+              <div class="name-content">
+                <p>Chicken chops</p>
+                <img src="./images/Group 3.png" alt="" width="20px" height="20px" />
+              </div>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and
+                typesetting industry.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Card Block End -->
+        <!-- Main Card Block End -->
+      </div>
+    </div>
+  </section>
+  <!-- Footer -->
+  <div class="footer-div">
+    <div class="yummy-footer">
+      <div>
+        <a href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="133" height="64" viewBox="0 0 133 64">
+            <text id="Yummy" transform="translate(0 45)" fill="#FFFFFF" font-size="40"
+              font-family="Apple-Chancery, Apple Chancery">
+              <tspan x="0" y="0">Yummy</tspan>
+            </text>
+          </svg>
+        </a>
+      </div>
+      <div class="footer-menu">
+        <a href="./index.html">Home</a>
+        <a href="./addrecipe.html">Recipe</a>
+      </div>
+      <div>
+        <img id="twitter" src="./images/Group 14.png" alt="twitterlogo" />
+        <img id="facebook" src="./images/Group 12.png" alt="facebooklogo" />
+        <img id="insta" src="./images/Group 16.png" alt="instalogo" />
       </div>
     </div>
 
-    <script src="/script.js"></script>
-  </body>
+    <div class="footer-year">
+      <p id="by">©2022 by yummy.</p>
+    </div>
+  </div>
+
+  <script src="/script.js"></script>
+</body>
+
 </html>
