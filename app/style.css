@@ -1,16 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url("http://fonts.cdnfonts.com/css/apple-chancery");
 * {
   margin: 0;
   padding: 0;
 }
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
-
 body {
   font-family: "Poppins", sans-serif;
   background-color: #f2f2f2;
-}
-* {
-  margin: 0;
-  padding: 0;
 }
 /* Navigation block */
 .nav-wrap {
@@ -36,6 +32,7 @@ body {
   height: 33px;
   text-align: center;
   border-radius: 33px;
+  text-decoration: none;
 }
 .nav-items a:nth-child(1) {
   background-color: #00b158;
@@ -47,35 +44,27 @@ body {
 
 /* cover image */
 .header {
-  padding: 235px 0px;
-  background-image: url(/images/leo-roza-P_z_xlMGuEk-unsplash.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/images/leo-roza-P_z_xlMGuEk-unsplash.png);
   background-color: black;
   opacity: 60;
+  height: 600px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  display: flex;
+  align-items: center;
 }
 .header-content {
   margin: 0 auto;
   max-width: 718px;
 }
-/* input#search-bar {
-  width: 580px;
-  border: none;
-  margin: 0px 40px;
-} */
 .header h1 {
   color: #fff;
   font-size: 44px;
+  text-align: center;
 }
-/* .header input {
-  max-width: 580px;
-  height: 50px;
-  border-radius: 25px;
-  background-image: url(/images/noun-search-3039092.png);
-  background-repeat: no-repeat;
-  border: none;
-} */
+/* form */
 #formId {
   position: relative;
   max-width: 600px;
@@ -134,11 +123,17 @@ body {
   border: 0px;
   text-transform: uppercase;
 }
-.recipe-card-wrap {
-  display: flex;
+/* main Card Block */
+.imagecards {
+  width: 100;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin: 0px 20px;
+  margin: 20px auto;
+  gap: 30px;
   justify-content: center;
-  max-width: 343px;
 }
+/* Recipe image block  */
 .recipe-card {
   max-width: 343px;
   background-color: #fff;
@@ -153,15 +148,6 @@ body {
   padding: 20px;
 }
 
-/* Card Block */
-.imagecards {
-  width: 100;
-  display: grid;
-  grid-template-columns: auto auto auto;
-  margin: 0px 20px;
-  margin: 20px auto;
-  gap: 30px;
-}
 /* footer */
 .footer-div {
   background-color: #17285a;
@@ -177,6 +163,7 @@ body {
   padding: 20px 0;
   justify-content: space-between;
   border-bottom: olivedrab;
+  align-items: center;
 }
 .footer-menu {
   display: flex;
@@ -195,38 +182,40 @@ body {
 .footer-menu a {
   color: #ffff;
   margin-left: 20px;
+  text-decoration: none;
 }
 .footer-year {
   border-top: 1px solid #ffffff;
   padding: 25px 0px;
-  width: 80%;
-  margin: auto;
 }
 
 .footer-year p {
   color: #ffffff;
   text-align: center;
 }
-
+/* media query @1200px */
 @media (max-width: 1200px) {
   .imagecards {
     grid-template-columns: auto auto;
-    margin: 20px 150px;
     gap: 40px;
   }
 }
-
+/* media query @780px */
 @media (max-width: 780px) {
   .imagecards {
-    grid-template-columns: auto auto;
-    margin: 20px 32px;
+    grid-template-columns: auto;
     gap: 30px;
   }
-}
-@media (max-width: 520px) {
-  .imagecards {
-    grid-template-columns: auto;
+  .nav-group {
+    margin: 0 auto;
+    max-width: 960px;
+    padding: 20px 0px 20px 20px;
+    display: flex;
+    justify-content: space-between;
   }
+}
+/* media query @520px */
+@media (max-width: 520px) {
   .footer-menu {
     display: flex;
     justify-content: space-evenly;
@@ -257,7 +246,7 @@ body {
     display: block;
   }
 }
-
+/* media query @425px */
 @media (max-width: 425px) {
   .imagecards {
     grid-template-columns: auto;
@@ -279,7 +268,7 @@ body {
     margin: auto 20px;
   }
 }
-
+/* media query @375px */
 @media (max-width: 375px) {
   .imagecards {
     grid-template-columns: auto;
@@ -291,6 +280,7 @@ body {
     padding: 0px 5px 0 16px;
   }
 }
+/* media query @320px */
 @media (max-width: 320px) {
   #formId input {
     max-width: 295px;

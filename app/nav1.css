@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.Nav_Main_container {
+  height: 90px;
+  background: #ffffff;
+  box-shadow: 0px 2px 2px #00000029;
+  display: flex;
+}
+.Nav_Sub_container {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 786px) {
+  .Nav_Sub_container {
+    width: 100%;
+  }
+}
+@media (min-width: 1366px) {
+  .Nav_Sub_container {
+    width: 60%;
+  }
+}
+.LogoHamber {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 786px) {
+  .LogoHamber {
+    width: 90%;
+    margin: auto;
+  }
+}
+
+.LogoHamber .Hamber {
+  display: none;
+}
+@media (max-width: 786px) {
+  .LogoHamber {
+    justify-content: space-between;
+  }
+  .LogoHamber .Hamber {
+    display: block;
+  }
+}
+
+.NavMeno a {
+  margin-right: 30px;
+  font-size: 18px;
+  text-decoration: none;
+  border: none;
+  color: #363636;
+}
+@media (max-width: 786px) {
+  .NavMeno {
+    display: none;
+  }
+}
+.NavMeno a:last-child {
+  margin-right: 0;
+}
+
+.NavMeno a.active {
+  background: #00b158;
+  border-radius: 17px;
+  padding: 4px 20px;
+  color: #ffffff;
+}
+
+.NavMeno a:hover {
+  color: #00b158;
+}

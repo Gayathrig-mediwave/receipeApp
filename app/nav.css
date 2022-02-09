@@ -1,0 +1,39 @@
+.Nav_Main_container {
+  height: 90px;
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 0px 2px 2px #00000029;
+}
+
+.Nav_Sub_container {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Nav_Sub_container .Hamber {
+  display: none;
+}
+.NavMeno a {
+  text-decoration: none;
+}
+@media (max-width: 780px) {
+  .Nav_Sub_container {
+    width: 100%;
+  }
+  .LogoHamber {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    justify-content: space-between;
+  }
+  .Nav_Sub_container .Hamber {
+    display: block;
+  }
+  .NavMeno {
+    display: none;
+  }
+}

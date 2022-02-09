@@ -14,12 +14,12 @@
   <div class="nav-wrap">
     <div class="nav-group">
       <div class="logo-blk">
-        <img src="./images/Yummy.png" alt="Yummy logo" />
+        <img src="/images/Yummy.png" alt="Yummy logo" />
       </div>
-
       <div class="nav-items">
-        <p>Home</p>
-        <p>Recipe</p>
+        <a href="./index.html">Home</a>
+        <a href="./addrecipe.html">Recipe </a>
+        <p><img src="./images/Group 22.png" alt="" srcset=""></p>
       </div>
     </div>
   </div>
@@ -35,63 +35,96 @@
   <div class="addRecipe-container">
     <a href="./index.html">
       < Back to home </a>
-        <!-- Form to add recipe -->
+        <!-- Form to add recipe-->
         <form id="form-container" class="RecipieFrom">
           <h2>Add your new recipes</h2>
-
-          <div class="recipe-namediv">
+          <!--recipe name-->
+          <div class="recipelabel-div">
             <label>Name of your recipe</label>
-            <input type="text" id="recipe-name" />
           </div>
-          <div class="recipe-imagediv">
+          <div class="recipeName-div">
+            <input type="text" id="recipe-name" name="recipe-name" placeholder="Clam Dip" />
+          </div>
+          <!--recipe image-->
+          <div class="recipeImage-div">
             <label>Recipe image</label>
-            <input type="text" id="recipe-image" />
           </div>
-
-          <div class="mt-sm">
-            <input type="submit" id="uploadbutton" value="UPLOAD" />
+          <div class="recipeImageInput-div">
+            <input type="text" id="recipe-image" name="recipe-image" placeholder="cover_image.jpeg" />
           </div>
-
-
+          <!--upload button-->
+          <div class="uploadbuttonDiv">
+            <input type="file" value="Update" id="upl-button" accept="image/png, image/jpg" hidden="hidden" />
+            <label id="uploadbutton" for="upl-button">UPLOAD</label>
+          </div>
+          <!--veg or non veg radio group -->
           <div class="food-type">
             <p>Food type </p>
-            <input type="radio" id="vegetarian" name="vegetarian" value="Vegetarian">
+            <input type="radio" id="vegetarian" name="food-type-radio" value="Vegetarian">
             <label for="vegetarian">Vegetarian</label><br>
-            <input type="radio" id="nonvegetarian" name="nonvegetarian" value="Non-Vegetarian">
+            <input type="radio" id="nonvegetarian" name="food-type-radio" value="Non-Vegetarian">
             <label for="nonvegetarian">Non-Vegetarian</label><br>
-
           </div>
-          <div>
-            <p>
-              Ingredients required
-            </p>
+
+
+
+
+
+          <!--Ingredients required -->
+          <div class="ingdiv">
+            <p>Ingredients required</p>
           </div>
           <div class="ingredients-div">
-            <textarea class="ingredients" name="ingredients" rows="4" cols="50"></textarea>
+            <textarea class="ingredients" id="ingredients" name="ingredients" rows="4" cols="50" placeholder="1 (8 ounce) block cream cheese, 
+               room temperature 1 large shallot, 
+               minced 1/4 cup chopped parsley
+               3 tablespoons chopped chives 
+               1 tablespoon lemon zest 
+               1 tablespoon freshly squeezed lemon juice"></textarea>
 
           </div>
-          <div>
-            <p>
-              Steps to prepare
-            </p>
+          <!-- Steps to prepare -->
+          <div class="stepsDiv">
+            <p>Steps to prepare</p>
           </div>
           <div class="preparation">
-            <textarea class="preparation-steps" name="preparation-steps" rows="4" cols="50"></textarea>
+            <textarea class="preparation-steps" id="preparation-steps" name="preparation-steps" rows="4" cols="50"
+              placeholder="
+            Make the clam dip:
+            In a medium bowl, 
+            beat the cream cheese with a handheld mixer
+            on medium speed until smooth. 
+            A whisk will work fine if 
+            the cream cheese is very soft.
+            Add the clams and clam juice:
+            If any of the clams are too large for your liking, 
+            chop them smaller. 
+            It’s nice to have a mixture of sizes—it feels like 
+            you’ve won a prize when you get 
+            an occasional larger piece of clam."></textarea>
 
           </div>
+          <!-- submit button -->
           <div class="addrecipebtnclass">
             <input type="submit" class="addrecipebtn" id="addrecipebtn" name="addrecipebtn" value="ADD RECIPE" />
           </div>
-
         </form>
   </div>
 
+
+
   <!-- footer div -->
   <div class="footer-div">
-
     <div class="yummy-footer">
       <div>
-        <p id="yummy">Yummy</p>
+        <a href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="133" height="64" viewBox="0 0 133 64">
+            <text id="Yummy" transform="translate(0 45)" fill="#f2f2f2" font-size="40"
+              font-family="Apple-Chancery, Apple Chancery">
+              <tspan x="0" y="0">Yummy</tspan>
+            </text>
+          </svg>
+        </a>
       </div>
       <div class="footer-menu">
         <a href="./index.html">Home</a>
@@ -107,8 +140,8 @@
     <div class="footer-year">
       <p id="by">©2022 by yummy.</p>
     </div>
-
   </div>
+
   <script src="/addrecipescript.js"></script>
 </body>
 
