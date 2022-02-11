@@ -11,11 +11,11 @@ const reader = new FileReader(updateBtn);
 var imgurl = "";
 var path = "";
 updateBtn.addEventListener("change", function (event) {
-  console.log("Working------------->");
   imgurl = event.target.files[0].name;
   document.getElementById("recipe-image").value = imgurl;
-  //path = document.getElementById("upl-button").value;
-  path = imgurl;
+  path = document.getElementById("upl-button").value;
+  console.log(`Path  :${path}`);
+  //path = imgurl;
   console.log("path", path);
   console.log(imgurl);
   if (imgurl) {
@@ -36,7 +36,7 @@ addRecipesForm.addEventListener("submit", function (event) {
     ingredients: formData.get("ingredients"),
     stepstoPrepare: formData.get("preparation-steps"),
     image: {
-      url: path,
+      url: formData.get("recipe-image"),
       altInfo: formData.get("recipe-name") + " " + "Image",
     },
   };

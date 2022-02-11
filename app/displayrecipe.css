@@ -1,9 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url("http://fonts.cdnfonts.com/css/apple-chancery");
+
 * {
   margin: 0;
   padding: 0;
 }
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
-@import url("http://fonts.cdnfonts.com/css/apple-chancery");
+
 body {
   font-family: "Poppins", sans-serif;
   background-color: #f2f2f2;
@@ -98,9 +100,14 @@ body {
 }
 
 .dispRecipe-head img {
-  margin-left: 15px;
+  max-width: 18px;
+  width: 100%;
+  margin-top: 10px;
 }
 
+.foodtype {
+  margin-left: 15px;
+}
 .dispRecipe-head h2 {
   font: normal normal 600 28px/42px Poppins;
   letter-spacing: 0px;
@@ -128,13 +135,20 @@ body {
   font: normal normal normal 18px/32px Poppins;
   letter-spacing: 0px;
 }
+.display-Ingredients-p p {
+  word-break: break-all;
+  white-space: normal;
+}
 .display-steps-p {
   background-color: #ffff;
   padding: 20px;
   font: normal normal normal 18px/32px Poppins;
   letter-spacing: 0px;
 }
-
+.display-steps-p p {
+  word-break: break-all;
+  white-space: normal;
+}
 /*footer*/
 .footer-div {
   background-color: #17285a;
